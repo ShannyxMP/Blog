@@ -1,0 +1,33 @@
+{
+  "name": "udemy-capstone-2-blog",
+  "version": "1.0.0",
+  "description": "A simple blog web application built with Node.js, Express.js, and EJS.",
+  "keywords": [
+    "node.js",
+    "express",
+    "ejs",
+    "blog",
+    "web",
+    "app"
+  ],
+  "homepage": "https://github.com/ShannyxMP/Blog#readme",
+  "bugs": {
+    "url": "https://github.com/ShannyxMP/Blog/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ShannyxMP/Blog.git"
+  },
+  "license": "MIT",
+  "author": "ShannyxMP",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "body-parser": "^2.2.0",
+    "ejs": "^3.1.10",
+    "express": "^5.1.0"
+  }
+}
