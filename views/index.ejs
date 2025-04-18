@@ -6,6 +6,8 @@
 <div>
   <h2><%= posts[i].title %></h2>
   <p><%= posts[i].content %></p>
+
+  <a href="/edit-post/<%= i %>">Edit post</a>
 </div>
 
 <% } %> <%- include("partials/footer.ejs") %>

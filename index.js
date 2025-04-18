@@ -29,6 +29,24 @@ app.post("/submit", (req, res) => {
 
   res.render("index.ejs", { posts: posts });
 });
+
+app.get("/edit-post/:postId", (req, res) => {
+  const postIndex = req.params.postId;
+  const post = posts[postIndex];
+
+  res.render("edit-post.ejs", { post: post, index: postIndex });
+});
+
+app.post("/", (req, res) => {
+  const postIndex = req.body["index"];
+
+  posts[postIndex].title = req.body["title"];
+  posts[postIndex].content = req.body["content"];
+
+  console.log("Editted post saved.");
+  // res.render("index.ejs", { posts: posts });
+  res.redirect("/");
+});
 });
 
 // Start the server:
