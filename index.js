@@ -47,6 +47,12 @@ app.post("/", (req, res) => {
   // res.render("index.ejs", { posts: posts });
   res.redirect("/");
 });
+
+app.post("/delete-post/:postId", (req, res) => {
+  const postIndex = req.params.postId;
+  posts.splice(postIndex, 1);
+  console.log(`Post ${postIndex} deleted`);
+  res.redirect("/");
 });
 
 // Start the server:
