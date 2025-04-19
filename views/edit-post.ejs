@@ -2,7 +2,8 @@
 
 <h1>You are editing a post:</h1>
 
-<form action="/" method="POST">
+<form action="/edit-post/:postId" method="POST">
+  <!-- Hidden to store index of post being edited -->
   <input type="hidden" name="index" value="<%= index %>" />
 
   <input
@@ -10,15 +11,19 @@
     name="title"
     placeholder="Title"
     value="<%= post.title %>"
+    required
   />
   <input
     type="text"
     name="content"
     placeholder="Write your post here..."
     value="<%= post.content %>"
+    required
   />
+  <!-- TODO: add -> minlength="150" | REMOVED for testing purposes -->
 
   <input type="submit" value="Add post" />
+
   <a href="/">Cancel</a>
 </form>
 

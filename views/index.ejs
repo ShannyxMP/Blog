@@ -1,13 +1,18 @@
 <%- include("partials/header.ejs") %>
 
+<!-- TODO: Move to navbar in header -->
 <a href="/add-post">Posting page</a>
 
+<!-- Loop through each post and display -->
 <% for (let i = 0; i < posts.length; i++) { %>
 <div>
   <h2><%= posts[i].title %></h2>
   <p><%= posts[i].content %></p>
 
+  <!-- Link to edit current post -->
   <a href="/edit-post/<%= i %>">Edit post</a>
+
+  <!-- Form to delete current post -->
   <form action="/delete-post/<%= i %>" method="POST">
     <button
       type="submit"
