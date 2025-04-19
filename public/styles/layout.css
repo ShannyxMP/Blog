@@ -1,3 +1,56 @@
 html {
-  background-color: pink;
+  background-color: hsl(51, 100%, 95%);
+  color: hsl(13, 100%, 62%);
+  font-family: "Quicksand", sans-serif;
+  font-weight: 400;
+}
+
+main {
+  height: 95vh;
+}
+
+a {
+  color: hsl(13, 100%, 62%);
+  text-decoration: none;
+}
+
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+
+  border-bottom: 5px double hsl(13, 100%, 62%);
+  /* padding-bottom: 20px; */
+}
+
+#navbar div:nth-child(2) a {
+  font-family: "Cherry Bomb One";
+  font-size: 3rem;
+}
+
+#navbar div:nth-child(2) img {
+  height: 2.5rem;
+}
+
+#navbar div:nth-child(3) a {
+  padding-right: 30px;
+  font-size: 2rem;
+}
+
+#navbar div:nth-child(3) a:hover {
+  text-shadow: 0px 0px 10px hsl(13, 75%, 62%);
+}
+
+#footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5vh;
+
+  background-color: hsl(13, 75%, 62%);
+}
+
+#footer a {
+  color: hsl(51, 100%, 95%);
 }
