@@ -1,3 +1,5 @@
+/* TODO: Check responsiveness */
+
 h1 {
   font-size: 1.5rem;
 }
@@ -82,9 +84,9 @@ span {
   align-items: center;
 }
 
-/********** FOR THE VIEW PAGE **********/
+/********** FOR ALL OTHER PAGES (excluding homepage - ie. view-post, add-post, edit-post) **********/
 
-#view-container {
+.container {
   background-color: hsl(13, 72%, 55%);
   color: hsl(51, 100%, 95%);
   border-radius: 25px;
@@ -94,22 +96,98 @@ span {
   text-align: justify;
 }
 
-#view-container div {
+.container div {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  width: 100%;
 }
 
-#view-container p {
+.container p {
   font-size: 1rem;
 }
 
-#view-container a {
+.container a {
   color: hsl(51, 100%, 95%);
-  font-size: small;
+  font-size: 1rem;
   padding-bottom: 2px;
 }
 
-#view-container a:hover {
+.container a:hover {
   border-bottom: 1px solid hsl(51, 100%, 95%);
+}
+
+/********** SPECIFICALLY FOR ADD & EDIT POST PAGE **********/
+form {
+  margin: 0 20px;
+}
+
+input {
+  width: 100%;
+  transform: none;
+
+  margin: 0 20px;
+  padding: 12px 20px;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 600;
+
+  border: none;
+  border-radius: 25px;
+  background-color: hsl(51, 100%, 95%);
+  color: hsl(13, 72%, 55%);
+}
+
+textarea {
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 250px;
+
+  padding: 12px 20px;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 600;
+
+  border: none;
+  border-radius: 25px;
+  background-color: hsl(51, 100%, 95%);
+  color: hsl(13, 72%, 55%);
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border: 5px dotted hsl(13, 72%, 55%);
+}
+
+#edit_add-container {
+  gap: 20px;
+}
+
+#edit_add-container div:nth-child(4) {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+#edit_add-container button {
+  border: none;
+  border-radius: 25px;
+  background-color: hsl(51, 100%, 95%);
+  color: hsl(13, 72%, 55%);
+
+  font-size: 1rem;
+  font-weight: 600;
+
+  padding: 12px 20px;
+
+  position: relative;
+  left: 20px;
+}
+
+#edit_add-container button:hover {
+  border-bottom: 1px solid hsl(51, 100%, 95%);
+  box-shadow: 0 0 10px hsl(51, 100%, 95%);
 }

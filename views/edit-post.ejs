@@ -2,35 +2,48 @@
 
 <h1>Edit a post:</h1>
 
-<form action="/edit-post/:postId" method="POST">
-  <!-- Hidden to store index of post being edited -->
-  <input type="hidden" name="index" value="<%= index %>" />
+<div class="container">
+  <form action="/edit-post/:postId" method="POST">
+    <!-- Hidden to store index of post being edited -->
+    <input type="hidden" name="index" value="<%= index %>" />
 
-  <input
-    type="text"
-    name="title"
-    placeholder="Title"
-    value="<%= post.title %>"
-    required
-  />
-  <input
-    type="text"
-    name="content"
-    placeholder="Write your post here..."
-    value="<%= post.content %>"
-    required
-  />
-  <!-- TODO: add -> minlength="150" | REMOVED for testing purposes -->
-  <input
-    type="text"
-    name="author"
-    placeholder="Author"
-    value="<%= post.author %>"
-    required
-  />
+    <div id="edit_add-container">
+      <div>
+        <input
+          type="text"
+          name="title"
+          placeholder="Title"
+          value="<%= post.title %>"
+          required
+        />
+      </div>
+      <div>
+        <textarea
+          type="text"
+          name="content"
+          placeholder="Write your post here..."
+          required
+        >
+<%= post.content %></textarea
+        >
+      </div>
+      <!-- TODO: add -> minlength="150" | REMOVED for testing purposes -->
+      <div>
+        <input
+          type="text"
+          name="author"
+          placeholder="Author"
+          value="<%= post.author %>"
+          required
+        />
+      </div>
 
-  <input type="submit" value="Add post" />
-  <a href="/">Cancel</a>
-</form>
+      <div>
+        <a href="/">Cancel</a>
+        <button type="submit" value="Save post">Save Post</button>
+      </div>
+    </div>
+  </form>
+</div>
 
 <%- include("partials/footer.ejs") %>

@@ -2,19 +2,31 @@
 
 <h1>Write a post:</h1>
 
-<form action="/submit" method="POST">
-  <input type="text" name="title" placeholder="Title" required />
-  <input
-    type="text"
-    name="content"
-    placeholder="Write your post here..."
-    required
-  />
-  <!-- TODO: add -> minlength="150" | REMOVED for testing purposes -->
-  <input type="text" name="author" placeholder="Author" required />
-
-  <input type="submit" value="Add post" />
-  <a href="/">Cancel</a>
-</form>
+<div class="container">
+  <form action="/submit" method="POST">
+    <div id="edit_add-container">
+      <div>
+        <input type="text" name="title" placeholder="Title" required />
+      </div>
+      <div>
+        <textarea
+          type="text"
+          name="content"
+          placeholder="Write your post here..."
+          rows="6"
+          required
+        ></textarea>
+        <!-- TODO: add -> minlength="150" | REMOVED for testing purposes -->
+      </div>
+      <div>
+        <input type="text" name="author" placeholder="Author" required />
+      </div>
+      <div>
+        <a href="/">Cancel</a>
+        <button type="submit" value="Add post">Add Post</button>
+      </div>
+    </div>
+  </form>
+</div>
 
 <%- include("partials/footer.ejs") %>
