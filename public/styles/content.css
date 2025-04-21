@@ -81,4 +81,35 @@ span {
   justify-content: space-between;
   align-items: center;
 }
+
+/********** FOR THE VIEW PAGE **********/
+
+#view-container {
+  background-color: hsl(13, 72%, 55%);
+  color: hsl(51, 100%, 95%);
+  border-radius: 25px;
+
+  padding: 30px;
+
+  text-align: justify;
+}
+
+#view-container div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#view-container p {
+  font-size: 1rem;
+}
+
+#view-container a {
+  color: hsl(51, 100%, 95%);
+  font-size: small;
+  padding-bottom: 2px;
+}
+
+#view-container a:hover {
+  border-bottom: 1px solid hsl(51, 100%, 95%);
 }

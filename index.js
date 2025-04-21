@@ -92,6 +92,17 @@ app.post("/delete-post/:postId", (req, res) => {
   res.redirect("/");
 });
 
+// Route: View a post by its index
+app.get("/views/view-post/:postId", (req, res) => {
+  const postIndex = req.params.postId;
+
+  if (!posts[postIndex]) {
+    return res.status(404).send("Post not found.");
+  }
+
+  res.render("view-post.ejs", { posts: posts, index: postIndex });
+});
+
 // Start the server
 app.listen(port, () => {
   console.log(`Server running on port ${port}`);

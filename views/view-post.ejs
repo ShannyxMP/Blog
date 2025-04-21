@@ -1,0 +1,23 @@
+<%- include('partials/header.ejs') %>
+
+<!-- [ ]: Add image 
+<div>
+  <div>
+    <img src="" alt="" />
+  </div>
+</div>
+-->
+
+<div id="view-container">
+  <div>
+    <div><a href="/">Back to Homepage</a></div>
+  </div>
+  <h1><%= posts[index].title %></h1>
+  <div>
+    <p><%= posts[index].content%></p>
+  </div>
+  <br />
+  <p>By <%= posts[index].author%></p>
+</div>
+
+<%- include('partials/footer.ejs') %>
