@@ -1,6 +1,6 @@
 <%- include("partials/header.ejs") %>
 
-<h1>You are adding a post:</h1>
+<h1>Write a post:</h1>
 
 <form action="/submit" method="POST">
   <input type="text" name="title" placeholder="Title" required />
@@ -11,6 +11,8 @@
     required
   />
   <!-- TODO: add -> minlength="150" | REMOVED for testing purposes -->
+  <input type="text" name="author" placeholder="Author" required />
+
   <input type="submit" value="Add post" />
   <a href="/">Cancel</a>
 </form>

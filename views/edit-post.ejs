@@ -1,6 +1,6 @@
 <%- include("partials/header.ejs") %>
 
-<h1>You are editing a post:</h1>
+<h1>Edit a post:</h1>
 
 <form action="/edit-post/:postId" method="POST">
   <!-- Hidden to store index of post being edited -->
@@ -21,9 +21,15 @@
     required
   />
   <!-- TODO: add -> minlength="150" | REMOVED for testing purposes -->
+  <input
+    type="text"
+    name="author"
+    placeholder="Author"
+    value="<%= post.author %>"
+    required
+  />
 
   <input type="submit" value="Add post" />
-
   <a href="/">Cancel</a>
 </form>
 
