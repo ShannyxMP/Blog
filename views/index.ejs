@@ -7,17 +7,17 @@
   </div>
 </div>
 -->
-<div>
+<div id="welcome">
   <p>
     Welcome to <span>CapyBlog</span>. A place to share information, opinions or
     experiences.
   </p>
 </div>
 
-<div class="flex-container">
+<div class="all_posts-flexcontainer">
   <!-- Loop through each post and display -->
   <% for (let i = 0; i < posts.length; i++) { %>
-  <div class="container-orange flex-item">
+  <div class="container-orange all_posts-flex-item">
     <div class="delete-leaf">
       <!-- Form to delete current post -->
       <form action="/delete-post/<%= i %>" method="POST">
@@ -30,8 +30,8 @@
         </button>
       </form>
     </div>
-    <div class="post-container">
-      <div class="heading-container">
+    <div class="post-homepage">
+      <div class="heading-homepage">
         <h1><%= posts[i].title %></h1>
         <!-- Link to edit current post -->
         <a href="/edit-post/<%= i %>" class="icon underline"

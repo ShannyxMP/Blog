@@ -10,7 +10,11 @@ span {
 
 /********** FOR THE HOMEPAGE **********/
 
-.flex-container {
+#welcome {
+  font-size: 1.5rem;
+}
+
+.all_posts-flexcontainer {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
@@ -18,7 +22,7 @@ span {
   gap: 10px;
 }
 
-.flex-item {
+.all_posts-flex-item {
   flex-shrink: 0;
 }
 
@@ -49,13 +53,8 @@ span {
 
 .icon img {
   height: 25px;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-  padding-bottom: 2px;
-}
-
-.container-orange:hover .icon img {
   opacity: 1;
+  padding-bottom: 2px;
 }
 
 .underline img:hover,
@@ -64,21 +63,21 @@ span {
   border-bottom: 1px solid hsl(51, 100%, 95%);
 }
 
-.post-container {
+.post-homepage {
   padding: 0 15%;
 }
 
-.post-container p {
+.post-homepage p {
   font-size: 1rem;
   text-align: justify;
 }
 
-.post-container a {
+.post-homepage a {
   font-weight: 700;
   color: hsl(51, 100%, 95%);
 }
 
-.heading-container {
+.heading-homepage {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -86,7 +85,7 @@ span {
 
 /********** FOR ALL OTHER PAGES (excluding homepage - ie. view-post, add-post, edit-post) **********/
 
-.container {
+.single_post-container {
   background-color: hsl(13, 72%, 55%);
   color: hsl(51, 100%, 95%);
   border-radius: 25px;
@@ -96,7 +95,7 @@ span {
   text-align: justify;
 }
 
-.container div {
+.single_post-container div {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -105,17 +104,17 @@ span {
   width: 100%;
 }
 
-.container p {
+.single_post-container p {
   font-size: 1rem;
 }
 
-.container a {
+.single_post-container a {
   color: hsl(51, 100%, 95%);
   font-size: 1rem;
   padding-bottom: 2px;
 }
 
-.container a:hover {
+.single_post-container a:hover {
   border-bottom: 1px solid hsl(51, 100%, 95%);
 }
 
