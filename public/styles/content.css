@@ -190,3 +190,46 @@ textarea:focus {
   border-bottom: 1px solid hsl(51, 100%, 95%);
   box-shadow: 0 0 10px hsl(51, 100%, 95%);
 }
+
+/********** RESPONSIVENESS **********/
+@media (min-width: 900px) {
+  /* HOMEPAGE */
+  .icon img {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  .container-orange:hover .icon img {
+    opacity: 1;
+  }
+
+  /* ALL OTHER PAGES */
+  .single_post-container {
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+
+@media (max-width: 400px) {
+  /* HOMEPAGE */
+  body {
+    overflow-x: hidden;
+  }
+
+  #welcome p {
+    font-size: 1.25rem;
+  }
+
+  .container-orange {
+    height: 350px;
+    width: 350px;
+  }
+  .post-homepage p {
+    font-size: 0.9rem;
+    margin-top: 0;
+  }
+  .heading-homepage h1 {
+    font-size: 1.25rem;
+  }
+}
