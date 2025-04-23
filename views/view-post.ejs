@@ -1,14 +1,6 @@
 <%- include('partials/header.ejs') %>
 
-<!-- [ ]: Add image 
-<div>
-  <div>
-    <img src="" alt="" />
-  </div>
-</div>
--->
-
-<div class="single_post-container">
+<div class="single_post-container blue-container">
   <div>
     <div><a href="/">Back to Homepage</a></div>
   </div>
@@ -18,4 +10,10 @@
   <p>By <%= posts[index].author%></p>
 </div>
 
+<div id="capybara-viewpage">
+  <img src="/images/Capybara.png" alt="capybara drawing" />
+  <div>
+    <p>You made it.</p>
+  </div>
+</div>
 <%- include('partials/footer.ejs') %>

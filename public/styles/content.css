@@ -1,5 +1,3 @@
-/* TODO: Check responsiveness */
-
 h1 {
   font-size: 1.5rem;
 }
@@ -9,12 +7,56 @@ span {
 }
 
 /********** FOR THE HOMEPAGE **********/
+.capybara-homepage_grid {
+  position: relative;
+  left: -15px;
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-columns: repeat(4, 1fr);
 
-#welcome {
-  font-size: 1.5rem;
+  width: 100%;
+  min-height: auto;
 }
 
-.all_posts-flexcontainer {
+#capybara-homepage {
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;
+}
+
+#capybara-homepage img {
+  max-width: 100vw;
+  max-height: 90vh;
+}
+
+#welcome {
+  grid-column: 3 / -1;
+  grid-row: 1 / 3;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#welcome p {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+#introduction {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#introduction div {
+  margin-left: 10%;
+  margin-right: 10%;
+  text-align: justify;
+}
+
+.all_posts-flex {
+  padding: 3rem 0;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
@@ -30,13 +72,24 @@ span {
 .container-orange {
   height: 400px;
   width: 400px;
-  background-color: hsl(13, 72%, 55%);
+  background: linear-gradient(
+    45deg,
+    rgb(158, 62, 36) 0%,
+    rgb(223, 93, 58) 50%,
+    rgb(223, 165, 58) 80%
+  );
   border-radius: 50%;
   color: hsl(51, 100%, 95%);
 }
 
 .delete-leaf {
-  background-color: hsl(130, 34%, 41%);
+  background: conic-gradient(
+    hsl(130, 34%, 41%) 135deg,
+    rgb(36, 86, 45) 135deg,
+    hsl(131, 36%, 37%) 315deg,
+    hsl(130, 34%, 41%) 315deg
+  );
+  /* hsl(130, 34%, 41%); */
   border-radius: 0% 75%;
   width: 50px;
   height: 50px;
@@ -118,6 +171,30 @@ span {
   border-bottom: 1px solid hsl(51, 100%, 95%);
 }
 
+/* SPECIFICALLY FOR VIEW PAGE */
+#capybara-viewpage {
+  position: relative;
+  left: -15px;
+
+  padding: 2rem 0;
+
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+#capybara-viewpage p {
+  font-size: clamp(1rem, 5vw, 2.5rem);
+  font-weight: 700;
+}
+#capybara-viewpage img {
+  height: auto;
+  max-width: 60vw;
+}
+.blue-container {
+  background-color: hsl(225, 29%, 61%);
+}
+
 /********** SPECIFICALLY FOR ADD & EDIT POST PAGE **********/
 form {
   margin: 0 20px;
@@ -194,6 +271,11 @@ textarea:focus {
 /********** RESPONSIVENESS **********/
 @media (min-width: 900px) {
   /* HOMEPAGE */
+  #introduction div {
+    margin-left: 28%;
+    margin-right: 28%;
+  }
+
   .icon img {
     opacity: 0;
     transition: opacity 0.3s ease;
@@ -217,6 +299,10 @@ textarea:focus {
     overflow-x: hidden;
   }
 
+  #welcome {
+    grid-column: 4 / -1;
+    grid-row: 1 / 3;
+  }
   #welcome p {
     font-size: 1.25rem;
   }

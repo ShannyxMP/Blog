@@ -1,20 +1,27 @@
 <%- include("partials/header.ejs") %>
 
-<!-- [ ]: Add image 
-<div>
-  <div>
-    <img src="" alt="" />
+<div class="capybara-homepage_grid">
+  <div id="capybara-homepage">
+    <img src="/images/Capybara.png" alt="capybara drawing" />
+  </div>
+  <div id="welcome">
+    <div>
+      <p>Welcome~</p>
+    </div>
   </div>
 </div>
--->
-<div id="welcome">
-  <p>
-    Welcome to <span>CapyBlog</span>. A place to share information, opinions or
-    experiences.
-  </p>
+
+<div id="introduction">
+  <div>
+    <p>
+      <strong>CapyBlog</strong> is a cozy corner of the internet for sharing
+      thoughts, stories, and gentle reflections. Here, mindfulness meets
+      meaning—come as you are, and feel free to stay awhile.
+    </p>
+  </div>
 </div>
 
-<div class="all_posts-flexcontainer">
+<div class="all_posts-flex">
   <!-- Loop through each post and display -->
   <% for (let i = 0; i < posts.length; i++) { %>
   <div class="container-orange all_posts-flex-item">
