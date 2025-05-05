@@ -73,7 +73,7 @@ app.post("/edit-post/:postId", (req, res) => {
     posts[postIndex].title = req.body["title"];
     posts[postIndex].content = req.body["content"];
     posts[postIndex].author = req.body["author"];
-    console.log("Editted post saved.");
+    console.log("Edited post saved.");
   }
 
   res.redirect("/");
