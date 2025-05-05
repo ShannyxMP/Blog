@@ -22,14 +22,7 @@
 
 Mobile layout of the blog:
 
-<img src="./public/images/CapyBlog - screenshot(1).png" alt="Mobile view of the blog - homepage" width="300"/>
-<img src="./public/images/CapyBlog - screenshot(2).png" alt="Mobile view of the blog - post detail" width="300"/>
-
-### Links
-
-<!-- TODO:  -->
-
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+<img src="./public/images/CapyBlog - screenshot(1).png" alt="Mobile view of the blog - homepage" width="300"/> <img src="./public/images/CapyBlog - screenshot(2).png" alt="Mobile view of the blog - post detail" width="300"/>
 
 ## Getting Started
 
@@ -151,7 +144,7 @@ The concepts of the various HTTP requests were briefly discussed in the lesson, 
 
 ## Author
 
-<!-- TODO: Add link of published website from GitHub -->
+<!-- TODO: Add link of published Resume website from GitHub | cannot at the moment as Resume repo is private -->
 
 - Resume - [ShannyxMP](https://www.your-site.com)
 
