@@ -1,10 +1,9 @@
-# Blog
+# CapyBlog
 
 ## Table of contents
 
 - [Overview](#overview)
   - [Screenshot](#screenshot)
-  - [Links](#links)
 - [Getting Started](#getting-started)
 - [My process](#my-process)
   - [Built with](#built-with)
@@ -48,7 +47,7 @@ To run this project locally:
 
 ### What I learned
 
-This was a project that practices the development of dynamic websites - a blog that allows you to view, add, edit and delete posts. I found it challenging but enjoyed the process overall. It allowed me to reaffirm the concepts of creating a server using JS, RESTful routing with express and embedding JS.
+This was a capstone project that practices the development of dynamic websites - a blog that allows you to view, add, edit and delete posts. I found it challenging but enjoyed the process overall. It allowed me to reaffirm the concepts of creating a server using JS, RESTful routing with express and embedding JS.
 
 When these concepts are taught, they make sense at first — but it’s only when applying them independently that the real challenges appear. It was difficult to grasp how to handle data sent from forms to the server, and to process that data within the server before correctly passing and embedding that data correctly in other files for rendering. I took advantage of using the loop variable (`let i = 0`) of the for loop as an endpoint for the base URL and to subsequently use the `:postId` to access and represent the index of the targeted post in the `posts` array, which was essential for deleting or editing.
 

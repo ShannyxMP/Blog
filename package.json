@@ -1,5 +1,5 @@
 {
-  "name": "udemy-capstone-2-blog",
+  "name": "udemy-capstone-2-capyblog",
   "version": "1.0.0",
   "description": "A simple blog web application built with Node.js, Express.js, and EJS.",
   "keywords": [
@@ -10,13 +10,13 @@
     "web",
     "app"
   ],
-  "homepage": "https://github.com/ShannyxMP/Blog#readme",
+  "homepage": "https://github.com/ShannyxMP/CapyBlog#readme",
   "bugs": {
-    "url": "https://github.com/ShannyxMP/Blog/issues"
+    "url": "https://github.com/ShannyxMP/CapyBlog/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ShannyxMP/Blog.git"
+    "url": "git+https://github.com/ShannyxMP/CapyBlog.git"
   },
   "license": "MIT",
   "author": "ShannyxMP",
